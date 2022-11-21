@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project4</title>
+    <style>
+        #parent {
+            height: 607px;
+            width: 1244px;
+            border: 1px solid;
+            margin: 0 auto;
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+        }
+
+        #box1 {
+            height: 505px;
+            width: 247px;
+            border: 1px solid;
+            border-radius: 12px 0 0 12px;
+            border: none;
+            background-image: url(./frute.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        #box2 {
+            height: 505px;
+            width: 740px;
+            border: 1px solid;
+            border-radius: 12px;
+            background-color: white;
+            border: none;
+            border-radius: 0px 12px 12px 0;
+        }
+
+        input[type=text]
+         {
+            width: 80%;
+            padding: 13px 3px;
+            margin: 7px 0;
+            display: inline-block;
+            border: 1px solid rgb(121, 26, 26);
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgb(156, 28, 28);
+
+            box-sizing: border-box;
+            margin-left: 66px;
+            margin-top: -15px;
+            font-size: 25px;
+
+        }
+
+        input[type=date] {
+            width: 38.5%;
+            padding: 13px 3px;
+            margin: 12px 0;
+            display: inline-block;
+            border: 1px solid;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgb(156, 28, 28);
+
+            box-sizing: border-box;
+            margin-left: 66px;
+            margin-top: -15px;
+            border-bottom: 1px solid rgb(156, 28, 28);
+            font-size: 25px;
+
+
+        }
+        select {
+            width: 38.5%;
+            padding: 13px 3px;
+            margin: 7px 0;
+            display: inline-block;
+            border: 1px solid rgb(121, 26, 26);
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgb(156, 28, 28);
+
+            box-sizing: border-box;
+            margin-left: 19px;
+            margin-top: -15px;
+           font-size: 25px;
+
+        }
+        input[type=submit] {
+            width: 23%;
+            background-color: green;
+            color: white;
+            padding: 14px 3px;
+            margin: 8px 0;
+            border: 1px solid;
+            cursor: pointer;
+            margin-left: 64px;
+            margin-top: 18px;
+            font-size: 25px;
+        }
+        #reg{
+            width: 248px;
+            padding: 13px 4px ;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="box1"></div>
+        <div id="box2">
+            <p style="font-size: 42px;padding-left: 52px; color: rgb(209, 101, 101); margin-left: 10px;">REGISTATION INFO</p>
+            <input type="text" name="Name" value="" placeholder="Name" required><br><br>
+            <input type="date" id="" name="birthday" placeholder="birthday" required>
+            <select id="gender" name="gender" required>
+                <option value="none" selected="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <input type="text" value="" placeholder="Class" required><br><br>
+            <input type="text" value="" placeholder="Registration Code" id="reg" required><br><br>
+            <input type="submit" value="Search">
+
+
+        </div>
+    </div>
+</body>
+
+</html>

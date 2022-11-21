@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: rgb(107, 26, 103);
+        }
+
+        #parent {
+            height: 426px;
+            width: 788px;
+            border: 1px solid;
+
+            margin: 0 auto;
+            margin-top: 123px;
+            background-color: white;
+            border: none;
+            display: flex;
+
+        }
+
+        #box1 {
+            height: 426px;
+            width: 374px;
+            border: 1px solid;
+            border: none;
+            background-color: rgb(34, 29, 29);
+
+        }
+
+        #box2 {
+            height: 424px;
+            width: 410px;
+            border: 1px solid;
+            border: none;
+
+        }
+
+        .Btn1 {
+            height: 41px;
+            width: 112px;
+            margin-top: 5px;
+            margin-left: 7px;
+            font-size: 20px;
+            border: 1px solid;
+            border: none;
+            background-color: rgb(34, 29, 29);
+            color: white;
+
+
+        }
+
+        .Btn1:hover {
+            border-bottom: 2px solid red;
+        }
+
+        .Btn2 {
+            height: 41px;
+            width: 112px;
+            margin-top: 5px;
+            margin-left:-21px;
+            font-size: 20px;
+            border: 1px solid;
+            border: none;
+            background-color: rgb(34, 29, 29);
+            color: white;
+
+        }
+
+       
+
+
+        .Btn2:hover {
+            border-bottom: 2px solid red;
+
+        }
+        #l1,#l2{
+            margin-left: 10px;
+            color: white;
+        }
+        input[type=text]{
+            height:32px;
+            width: 340px;
+            margin-left: 9px;
+            border: 1px solid;
+            border: none;
+            border: none;
+            outline: none;
+            color: white;
+            background-color:rgb(34, 29, 29);
+            border-bottom: 2px solid rgb(155,33 ,33);
+            
+            
+        }
+        input[type=password] {
+            height: 32px;
+            width: 340px;
+            color: white;
+            background-color:rgb(34,29,29) ;
+            margin-left: 9px;
+            border: 1px solid;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #01050e;
+            border-bottom: 2px solid rgb(155,33 ,33);
+
+        }
+
+
+        .signin {
+            height: 32px;
+            width: 340px;
+            border: 1px solid;
+            color: white;
+            background-color: rgb(34, 29, 29);
+            border-color: rgb(155, 33, 33);
+            margin-left: 10px;
+            margin-top: -6px;
+
+        }
+
+        a {
+            color: white;
+            margin-left: 122px;
+            text-decoration: none;
+        }
+        #check{
+            margin-left: 6px;
+            margin-top: -18px;
+        }
+        #box2{
+            
+            
+            background-image: url(./istockphoto-1275746020-170667a.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:center;
+            height:424px;
+            width: 410px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="box1">
+            <input type="button" value="Sign in" class="Btn1">
+            <input type="button" value="/ Sign Up" class="Btn2"><br><br>
+            <div>
+                
+                <label id="l1">Username</label><br>
+                <input type="text" name="username" value="username" placeholder="User name"><br><br>
+                <label id="l2">Password</label><br>
+                <input type="password" name="Password" value="Password" placeholder="password"><br><br>
+                <br id="check">
+                <div id="check">
+                <input type="checkbox" name="" id="">
+                <label for="" style="color: white;"  >Reminder me ?</label><br><br>
+                </div>
+                <br>
+                <input type="button" value="SIGN IN" class="signin"> <br><br>
+
+                <a href="">Forget Password ? </a>
+
+            </div>
+        </div>
+        <div id="box2"></div>
+    </div>
+</body>
+
+</html>

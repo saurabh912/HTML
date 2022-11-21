@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P14</title>
+    <link rel="stylesheet" href="./P14.css">
+<style>
+    #parent{
+        border: 1px solid;
+        height: 717px;
+        width: 930px;
+        background: rgb(111, 90, 90);
+        background-image: url(/CSS/Webtech-Project/Image/wood.jpg);
+        
+    }
+    .child {
+        border: 1px solid;
+        height: 590px;
+        width: 930px;
+        background: #10101085;;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    input[type=text]{
+        color: #ffffff;
+    }
+    
+    #p{
+        margin-left: 350px;
+        margin-top: 20px;
+        font-size: larger;
+        color: rgb(255, 255, 255);
+    }
+    
+    .son {
+        /* border: 1px solid; */
+        height: 200px;
+        width: 930px;
+        margin-top: 30px;
+        color: aliceblue;
+    
+    
+    }
+    
+    #user {
+        margin-bottom: 20px;
+        background-color: #161114;
+       
+    }
+    
+    #product {
+        margin-left: 80px;
+        color: #ffffff;    
+    }
+    #product1{
+        color: #ffffff;
+    }
+    
+    .son2 {
+        /* border: 1px solid; */
+        height: 130px;
+        width: 930px;
+        display: flex;
+        color: aliceblue;
+    
+    
+    }
+    
+    .son3 {
+        /* border: 1px solid; */
+        height: 130px;
+        width: 445px;
+        color: aliceblue;
+    }
+    
+    #Radio1 {
+        margin-left: 183px;
+       
+    }
+    #Radio2 {
+        margin-left: 168px;
+       
+    }
+    input[type="radio"]
+    {
+         box-shadow: 0px 0px 4px -1px #1c0d0d;
+        
+    }
+    
+    .son4 {
+        /* border: 1px solid; */
+        height: 130px;
+        width: 480px;
+    }
+    
+    .son5 {
+        /* border: 1px solid; */
+        height: 260px;
+        width: 929px;
+    }
+    
+    #enquiry {
+        margin-left: 180px;
+        margin-top: -16px;
+       
+    
+        background-color: #161114;
+        /* resize: none; */
+        color: #ffffff;
+    
+    }
+    
+    input[type=submit] {
+        margin-left: 180px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        background: #F25F22;
+        color: #ffffff;
+    }
+    
+    select {
+      
+        margin-top: 10px;
+        /* padding-left: 40px;  */
+        /* padding-right: 40px; */
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    
+    input[type=reset]
+    {
+        margin-left: 10px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        background: #F25F22;
+        color: #ffffff;
+    }
+    
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+    <div id="parent">
+        <p id="p">FEEDBACK FORM</p>
+        <div class="child">
+
+            <div class="son">
+                <label for="CustmerName" style="margin-left: 20px;">Customer Name</label><span
+                    style="margin-left: 40px;">:</span>
+                <input type="text" id="user" name="Custname" placeholder="Customer Name" />
+
+                <label for="Product" id="product"> Products Your Like </label><span style="margin-left: 40px;color: #ffffff;">:</span>
+                <select id="product1" name="Product" style="width:180px;  background-color: #161114;;">
+                    <option value="none" selected>Products</option>
+                    <option value="male">Iphone</option>
+                    <option value="female">Samsung</option>
+                    <option value="other">other</option>
+                </select><br><br>
+
+                <label for="Emailinput" style="margin-left: 20px;">Email Address</label><span
+                    style="margin-left: 50px;">:</span>
+                <input type="text" id="user" name="Address" placeholder="Email@exampl.com" /><br><br>
+
+                <label for="organizationinput" style="margin-left: 20px;">Organization</label><span
+                    style="margin-left: 60px;">:</span>
+                <input type="text" id="user" name="Organization" placeholder="Organization" /><br>
+
+
+            </div>
+            <div class="son2">
+                <div class="son3">
+                    <label for="RatingCompuny" style="margin-left: 20px;">Rating For Company </label><span style="margin-left: 10px;">:</span>
+                    <input type="radio" name="radio" id="Radio"><span>Very High</span><br>
+                    <input type="radio" name="radio" id="Radio1"><span>High</span><br>
+                    <input type="radio" name="radio" id="Radio1"><span>Medium</span><br>
+                    <input type="radio" name="radio" id="Radio1"><span>Low</span><br>
+                    <input type="radio" name="radio" id="Radio1"><span>Very Low</span>
+                </div>
+                <div class="son4">
+                    <label for="RatingCompuny" style="margin-left: 20px;">Rating For Support</label><span style="margin-left: 10px;">:</span>
+                    <input type="radio" name="radio" id="Radio"><span>Very Good</span><br>
+                    <input type="radio" name="radio" id="Radio2"><span>Good</span><br>
+                    <input type="radio" name="radio" id="Radio2"><span>Average</span><br>
+                    <input type="radio" name="radio" id="Radio2"><span>Fair</span><br>
+                    <input type="radio" name="radio" id="Radio2"><span>Poor</span>
+                </div>
+
+            </div>   
+            <label for="CustomerEnquiry" style="color:#fff ;margin-left: 30px;" >CustomerEnquiry </label><span style="margin-left: 20px;color: #ffffff;">:</span>
+            <div class="son5">
+             
+                <textarea name="Enquiry" id="enquiry" rows="5" cols="70" placeholder="Your Queries"></textarea><br><br>
+                <input type="submit" value="Submit"><input type="reset" value="reset">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

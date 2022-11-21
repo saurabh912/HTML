@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#parent{
+    height: 620px;
+    width: 500px;
+    margin-left: 10px;
+    border: 1px solid ;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 500px;
+    box-shadow: 8px 6px 6px black;
+    background-color: rgb(72, 192, 192);
+    display: flex;
+    justify-content: center;  
+}
+#heading{
+    margin-top: 90px;
+    text-align: center;
+}
+#box1{
+    height: 122px;
+    width: 467px;
+    margin-left: 2px;
+}
+#box2{
+    height: 232px;
+    width: 466px;
+    margin-top: 1px;
+    display: inline-block;
+}
+input[type=submit]{
+    height: 27px;
+    width: 155px;
+   
+    margin-top: 20px;
+    margin-left: 173px;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px rgb(14, 10, 218);
+    border-radius: 12px;
+    color: red;
+    border: none;
+
+}
+input[type=tel]{
+margin-left: 30px;
+}
+
+
+
+</style>
+</head>
+<body>
+ <div id="parent">
+ <main>
+    <h1 id="heading"><caption><strong>Pizza Form</strong></caption></h1>
+    
+     <form >
+    <fieldset id="box1">
+    <legend>Personal Info</legend>
+    First Name: <input type="text"><br><br>
+    Last Name: <input type="text"><br><br>
+    Phone: <input type="tel"> <br>
+    </fieldset>   
+    <fieldset id="box2">
+        <legend>Pizza</legend>
+        Size:<br>
+        
+        <input type="radio" name="radio" id="">
+        <label for="">Small</label><br>
+        <input type="radio" name="radio" id="">
+        <label for="">Medium</label><br>
+        <input type="radio" name="radio" id="">
+        <label for="">Large</label><br>
+        Topping(check all the apply):<br>
+        <input type="checkbox" name="" id="">
+        <label for="">Extra Cheese</label><br>
+        <input type="checkbox" name="" id="">
+        <label for="">Pepperoni</label><br>
+        <input type="checkbox" name="" id="">
+        <label for="">Sausages</label><br>
+        <input type="checkbox" name="" id="">
+        <label for="">Mushroom</label><br>
+        <input type="checkbox" name="" id="">
+        <label for="">Black olive</label><br>
+        <input type="checkbox" name="" id="">
+        <label for="">Green Pepper</label><br>
+    </fieldset>
+    <input type="submit" value="Enter my information">
+    
+     </form>
+    
+ </main>
+</div>  
+</body>
+</html>
